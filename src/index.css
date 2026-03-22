@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap');
+
+:root {
+  --text: #183144;
+  --heading: #102737;
+  --panel-bg: rgba(255, 255, 255, 0.86);
+  --panel-border: #c2d6e4;
+  --bg-grad-1: #e6f3ff;
+  --bg-grad-2: #fef8ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: 'Barlow', 'Segoe UI', Tahoma, sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(134, 187, 236, 0.4), transparent 40%),
+    radial-gradient(circle at 85% 0%, rgba(255, 213, 135, 0.35), transparent 35%),
+    linear-gradient(140deg, var(--bg-grad-1), var(--bg-grad-2));
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  color: var(--heading);
+}
